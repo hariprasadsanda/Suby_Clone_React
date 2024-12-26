@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Rubik+Wet+Paint&family=Style+Script&display=swap');
+
+body{
+    margin: 0;
+    padding: 0px 80px;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+/* Navbar Section  */
+.navbar-section{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    min-width: 80%;
+    top:0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 70px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.navbarInput{
+    height: 30px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid silver;
+}
+.navbarLogo{
+    color: orangered;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.navbarLogin{
+    color: black;
+    margin-right: 50px;
+}
+.navbarLogin:hover{
+    color: orangered;
+}
+/* Item Display Section */
+.itemDisplaySection{
+    display: flex   ;
+}
+.itemDisplayImageSection{
+    /* border: 1px solid red; */
+    margin: 16px;
+}
+.itemDisplayImage{
+    height: 150px;
+    width: 150px;
+}
+
+/* ChainDisplay Section */
+.chainDisplaysection{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.chainSectionImage{
+    width: 290px;
+    height: 180px;
+    margin: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+.chainDisplayBox{
+    display: flex;
+    justify-content: space-between;
+}
+.chainSectionFirmDetails{
+    margin: 25px;
+    margin-top: -35px;
+}
+.chainSectionFirmDetails h5{
+    margin-top: -15px;
+}
+.chainSectonOffer{
+    margin: 20px;
+    margin-top: -80px;
+    position: absolute;
+    margin-left: 20px;
+    width: 289px;
+    height: 54px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    color: aliceblue;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,2) 0%, rgba(0,0,0,0) 100%);
+}
+.chainSectionBtn{
+    margin: 1px;
+  font-size: xx-large;
+  border: none;
+  background-color: transparent;
+  margin-top: 35px;
+}
+/* Firm Collections section */
+
+.firmDisplaysection{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+ .firmSectionImage{
+    width: 250px;
+    height: 180px;
+    margin: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+.firmBox{
+    margin: 20px;   
+}
+.firmSectonOffer{
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    width: 250px;
+    color: aliceblue;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,2) 0%, rgba(0,0,0,0) 100%);
+    margin-left: 20px;
+    margin-top: -100px;
+    position: absolute;
+}
+.firmSectionFirmDetails{
+    margin-left: 20px;
+    margin-top: -30px;
+}
+.firmRegion{
+    color :rgb(96, 80, 80);
+    margin-top: -15px;
+}
+/* ProductDisplay Section */
+.productDisplay{
+    
+}
+.productDiplaySection{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid silver;
+    
+    
+}
+.productDisplayImg{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    position: relative;
+    
+    
+}
+.productDisplayBtn{
+    position: absolute;
+   border: 0px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: -40px;
+    color: orangered;
+    font-size: 20px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+/* LinK Tag  */
+.linkTag{
+    color: black;
+    text-decoration: none;
+}
+/* Fileter Section */
+.filterBtn{
+    margin: 0 10px;
+    height: 30px;
+    width: auto;
+    border-radius: 10px;
+    border: 1px solid silver;
+}
+.filterBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+/* LoaderE=Section */
+.loaderSec{
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Queries */
+@media (max-width:576px){
+    .navbar-section{
+        padding: 0px 20px;
+    }
+    .navbarInput{
+        height: 30px;
+        width: 100px;
+        border-radius: 8px;
+        border: 1px solid silver;
+    }
+    .itemDisplayImage{
+        height: 50px;
+        width: 50px;
+    }
+    .itemDisplayImageSection{
+        /* border: 1px solid red; */
+        margin: 6px;
+    }
+    .chainDisplayHeading{
+        font-size: medium;
+    }
+    .chainSectionBtn{
+      display: none;
+    }
+    .chainDisplaysection{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .chainSectionImage{
+        width: 290px;
+        height: 180px;
+        margin: 20px;
+        border-radius: 15px;
+        position: relative;
+    }
+    .firmSectionImage{
+        width: 280px;
+        height: 180px;
+        border-radius: 15px;
+        position: relative;
+        margin-left: -50px;
+    }
+    .firmSectonOffer{
+        border-bottom-left-radius:15px;
+        border-bottom-right-radius:15px;
+        width: 280px;
+        color: aliceblue;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,2) 0%, rgba(0,0,0,0) 100%);
+        margin-left: -50px;
+        /* margin-top: 100px; */
+        position: absolute;
+    }
+    .firmSectionFirmDetails{
+        margin-left: -20px;
+        margin-top: -30px;
+    }
+}
+@media (max-width:756px){
+    
+}
